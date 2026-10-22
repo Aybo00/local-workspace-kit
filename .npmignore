@@ -1,0 +1,8 @@
+src/
+tests/
+docs/
+examples/
+.github/
+scripts/
+tsconfig.json
+pnpm-lock.yaml

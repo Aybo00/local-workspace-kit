@@ -1,0 +1,10 @@
+{
+  "before": {
+    "conversationId": "00000000-0000-4000-8000-000000000001",
+    "source": {"id":"00000000-0000-4000-8000-000000000002","url":"https://example.com/release","title":"Example release","text":"Status: draft\nVersion: 1","readAt":"2026-10-07T10:00:00Z","truncated":false}
+  },
+  "after": {
+    "conversationId": "00000000-0000-4000-8000-000000000001",
+    "source": {"id":"00000000-0000-4000-8000-000000000003","url":"https://example.com/release","title":"Example release","text":"Status: published\nVersion: 2","readAt":"2026-10-08T10:00:00Z","truncated":false}
+  }
+}
