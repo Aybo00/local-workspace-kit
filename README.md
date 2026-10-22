@@ -67,7 +67,7 @@ Only the explicitly named regular file is read, with a 128,000-byte limit and st
 
 `pnpm check` runs type checking, the ESM/declaration build, and the Node test suite. Tests use fixtures and in-memory adapters. They include stale reads, late acknowledgments, explicit save recovery, close races, partial UTF-8 frames, cancellation, diff limits, unknown cells and CLI failures. No model or paid account is required. Tests run one file at a time.
 
-The prepared [CI workflow](.github/workflows/ci.yml) runs the same checks on Windows and Linux. A workflow file is not evidence that a remote CI run has passed; inspect actual runs after publication.
+The [CI workflow](.github/workflows/ci.yml) runs the same checks on Windows and Linux. Both clean-install jobs passed 88 tests in the [verified first successful run](https://github.com/Aybo00/local-workspace-kit/actions/runs/39872455464). See [the validation record](docs/VALIDATION.md) for the checked commit and limits.
 
 See [architecture](docs/ARCHITECTURE.md), [contracts](docs/CONTRACTS.md), [roadmap](ROADMAP.md) and [contributing](CONTRIBUTING.md).
 
