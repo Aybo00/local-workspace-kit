@@ -1,0 +1,3 @@
+# Only the pinned, declared build tool may run an install script.
+allowBuilds:
+  esbuild@0.28.2: true

@@ -6,11 +6,26 @@
   "type": "module",
   "license": "MIT",
   "author": "Aybo00",
-  "engines": { "node": ">=24" },
+  "engines": {
+    "node": ">=24"
+  },
   "packageManager": "pnpm@11.25.0",
-  "exports": { ".": { "types": "./dist/types/index.d.ts", "import": "./dist/index.js" } },
-  "bin": { "local-workspace": "./bin/local-workspace.mjs" },
-  "files": ["dist", "bin", "LICENSE", "THIRD_PARTY_NOTICES.md", "licenses"],
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "local-workspace": "./bin/local-workspace.mjs"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md",
+    "licenses"
+  ],
   "scripts": {
     "typecheck": "tsc --noEmit",
     "test": "node scripts/test.mjs",
@@ -18,7 +33,13 @@
     "check": "pnpm typecheck && pnpm build && pnpm test",
     "demo": "node bin/local-workspace.mjs plan examples/content.tsv --observed-on 2026-10-08 --as-of 2026-10-08 --label Example --text"
   },
-  "pnpm": { "onlyBuiltDependencies": ["esbuild"] },
-  "dependencies": { "zod": "4.6.5" },
-  "devDependencies": { "@types/node": "24.10.0", "esbuild": "0.28.2", "tsx": "4.23.15", "typescript": "5.9.3" }
+  "dependencies": {
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.0",
+    "esbuild": "0.28.2",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3"
+  }
 }
